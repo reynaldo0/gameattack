@@ -35,27 +35,27 @@ countdown_timer = 90000 # 90 detik
 
 # 3 - Load Game Assets ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3.1 - Load Images
-player = pygame.image.load("game1/img/dude.png")
-grass = pygame.image.load("game1/img/grass.png")
-castle = pygame.image.load("game1/img/castle.png")
-arrow = pygame.image.load("game1/img/bullet.png")
-enemy_img = pygame.image.load("game1/img/badguy.png")
-healthbar = pygame.image.load("game1/img/healthbar.png")
-health = pygame.image.load("game1/img/health.png")
-gameover = pygame.image.load("game1/img/gameover.png")
-youwin = pygame.image.load("game1/img/youwin.png")
+player = pygame.image.load("assets/img/dude.png")
+grass = pygame.image.load("assets/img/grass.png")
+castle = pygame.image.load("assets/img/castle.png")
+arrow = pygame.image.load("assets/img/bullet.png")
+enemy_img = pygame.image.load("assets/img/badguy.png")
+healthbar = pygame.image.load("assets/img/healthbar.png")
+health = pygame.image.load("assets/img/health.png")
+gameover = pygame.image.load("assets/img/gameover.png")
+youwin = pygame.image.load("assets/img/youwin.png")
 
 # 3.1 - Load audio
 pygame.mixer.init()
-hit_sound = pygame.mixer.Sound("game1/audio/explode.wav")
-enemy_hit_sound = pygame.mixer.Sound("game1/audio/enemy.wav")
-shoot_sound = pygame.mixer.Sound("game1/audio/shoot.wav")
+hit_sound = pygame.mixer.Sound("assets/audio/explode.wav")
+enemy_hit_sound = pygame.mixer.Sound("assets/audio/enemy.wav")
+shoot_sound = pygame.mixer.Sound("assets/audio/shoot.wav")
 hit_sound.set_volume(0.05)
 enemy_hit_sound.set_volume(0.05)
 shoot_sound.set_volume(0.05)
 
 # background music
-pygame.mixer.music.load("game1/audio/moonlight.wav")
+pygame.mixer.music.load("assets/audio/moonlight.wav")
 pygame.mixer.music.play(-1, 0.0)
 pygame.mixer.music.set_volume(0.25)
 
